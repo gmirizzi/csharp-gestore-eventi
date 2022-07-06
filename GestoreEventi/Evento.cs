@@ -101,7 +101,7 @@ namespace GestoreEventi
             if (DateTime.Compare(this.data, DateTime.Today) < 0)
             {
                 throw new NotValidDateException("La data è già passata");
-            } else if (n > PostiTotali)
+            } else if (n > this.Prenotazioni)
             {
                 throw new Exception("Non ci sono posti da disdire sufficienti");
             } else
